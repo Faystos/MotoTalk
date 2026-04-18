@@ -1,0 +1,7 @@
+{
+  "name": "moto-talk",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
