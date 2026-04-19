@@ -1,27 +1,4 @@
-@keyframes pulse-ring {
-  0% { transform: scale(1); opacity: 0.6; }
-  100% { transform: scale(1.8); opacity: 0; }
-}
-@keyframes pulse-core {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.06); }
-}
-@keyframes rotate-scan {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
-}
-@keyframes voice-bar {
-  0%, 100% { transform: scaleY(0.3); }
-  50% { transform: scaleY(1); }
-}
-@keyframes fade-in-up {
-  from { opacity: 0; transform: translateY(10px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-@keyframes slide-in {
-  from { opacity: 0; transform: translateX(-10px); }
-  to { opacity: 1; transform: translateX(0); }
-}
+@use 'animations';
 
 .device-search {
   display: flex;
@@ -67,7 +44,6 @@
       opacity: 0;
       inset: 0;
       margin: auto;
-
     }
 
     .orbite-ring:nth-child(1) {
@@ -135,7 +111,7 @@
       margin: 0;
       color: #6B7A90;
       font-size: 14px;
-      width: 183px;
+      width: 190px;
       text-align: center;
       line-height: 1.5;
     }
