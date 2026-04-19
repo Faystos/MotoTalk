@@ -1,6 +1,7 @@
-import { Component } from "@angular/core";
+import { Component, inject } from "@angular/core";
 import { IonContent } from "@ionic/angular/standalone";
-import {IconsComponent} from "../../shared/components/icons/icons.component";
+import { IconsComponent } from "../../shared/components/icons/icons.component";
+import { RouteService } from "../../shared/services/route/route.service";
 
 @Component({
   selector: 'app-main',
@@ -8,4 +9,10 @@ import {IconsComponent} from "../../shared/components/icons/icons.component";
   styleUrls: ['./main-page.component.scss'],
   imports: [IonContent, IconsComponent]
 })
-export class MainPageComponent {}
+export class MainPageComponent {
+  readonly #routeService = inject(RouteService);
+
+  navigateToDeviceSearch(): void {
+    this.#routeService.navigateTo('/device-search');
+  }
+}

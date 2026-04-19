@@ -1,0 +1,31 @@
+<ion-content [fullscreen]="true">
+  <div class="device-search">
+    <div class="device-search__title">
+      <h3>Поиск устройств</h3>
+    </div>
+
+    <div class="device-search__orbite">
+      <div class="orbite-ring"></div>
+      <div class="orbite-ring"></div>
+      <div class="orbite-ring"></div>
+      <div class="orbite-core">
+        <div class="core"></div>
+      </div>
+
+      <button class="device-search__button">
+        <app-icons name="search-icon" />
+      </button>
+    </div>
+
+    <div class="device-search__action-hint">
+      <h4>Поиск...</h4>
+      <p>Убедитесь, что MotoTalk открыт на втором телефоне</p>
+    </div>
+
+    <div class="device-search__controls">
+      <div class="control">
+        <button class="control__button" (click)="navigateToMainPage()">Отменить поиск</button>
+      </div>
+    </div>
+  </div>
+</ion-content>
