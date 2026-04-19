@@ -19,6 +19,7 @@ log.txt
 
 # Ionic
 /.ionic
+/.ai
 /www
 /platforms
 /plugins

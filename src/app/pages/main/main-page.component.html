@@ -3,21 +3,34 @@
 
     <div class="main__title">
       <h3>
-        <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-          <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2z" fill="none" stroke="#00E5A0" stroke-width="1.5"/>
-          <path d="M8 12l2.5-6L14 12l-3.5 6L8 12z" fill="#00E5A0"/>
-        </svg>
-
+        <app-icons name="logo-icon" />
         MOTOTALK
       </h3>
+      <p>Голосовая связь без интернета</p>
     </div>
 
-    <div class="main__button">
-      <svg width="48" height="48" viewBox="0 0 24 24" fill="none">
-        <path d="M12 1a3 3 0 00-3 3v8a3 3 0 006 0V4a3 3 0 00-3-3z" fill="#00E5A0"/>
-        <path d="M19 10v2a7 7 0 01-14 0v-2" stroke="#00E5A0" stroke-width="2" stroke-linecap="round"/>
-        <line x1="12" y1="19" x2="12" y2="23" stroke="#00E5A0" stroke-width="2" stroke-linecap="round"/>
-      </svg>
+    <button class="main__button">
+      <app-icons name="microphone-icon" />
+    </button>
+
+    <div class="main__action-hint">
+      <h4>Готов к подключению</h4>
+      <p>Нажмите для поиска второго устройства</p>
+    </div>
+
+    <div class="main__controls">
+      <div class="control">
+        <button class="control__button">
+          <app-icons name="history-icon" />
+        </button>
+        <span class="control__hint">История</span>
+      </div>
+      <div class="control">
+        <button class="control__button">
+          <app-icons name="main-setting-icon" />
+        </button>
+        <span class="control__hint">Настройки</span>
+      </div>
     </div>
   </div>
 </ion-content>

@@ -9,8 +9,10 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "lint": "ng lint"
+    "lint": "ng lint",
+    "generate-icons": "npx ts-node scripts/generate-icons.ts"
   },
+  "type": "module",
   "private": true,
   "dependencies": {
     "@angular/animations": "^20.0.0",
